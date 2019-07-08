@@ -40,7 +40,7 @@ class App extends Component {
         <Header />    
         <main>
           <MainForm features={this.props.features} selected={this.state.selected} 
-            updateFeature={(f,n) => this.updateFeature}/>
+            updateFeature={(f,n) => this.updateFeature(f,n)}/>
           <MainSummary selected={this.state.selected} />
         </main>
       </div>
